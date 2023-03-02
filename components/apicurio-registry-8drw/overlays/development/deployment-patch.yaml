@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: apicurio-registry-8drw
+  namespace: rhn-support-bpimente-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:5aa975e68debd03c5058a267178bcd088281fe6daf24825aeeea2690db3c6691
+        name: container-image
+        resources: {}
+status: {}
