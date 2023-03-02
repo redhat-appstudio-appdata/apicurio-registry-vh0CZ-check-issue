@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: apicurio-registry-8drw
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:vh0CZ-apicurio-registry-8drw
+      - image: quay.io/redhat-appstudio/user-workload@sha256:5aa975e68debd03c5058a267178bcd088281fe6daf24825aeeea2690db3c6691
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
